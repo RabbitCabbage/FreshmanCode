@@ -1,0 +1,43 @@
+bool check_answer;
+        int row_high = 0, row_low = 0;
+        int column = 0, column_left = 0;
+        int count_b, count_a = 0;
+        while (1) {
+            long long sum_use[m];
+            for (int j = 0; j < m; ++j) {
+                if (row_low == row_high) {
+                    if (row_low == 0)sum_use[j] = sum[0][j];
+                    else sum_use[j] = sum[row_low][j] - sum[row_low - 1][j];
+                } else {
+                    if (row_high == 0)sum_use[j] = sum[row_low][j];
+                    else sum_use[j] = sum[row_low][j] - sum[row_high - 1][j];
+                }
+
+            }
+            //求出需要用到的形式的前缀和；
+            count_b = 0;
+            while (1) {
+                if (column == m){column=0;column_left=0;break;}
+                long long temp;
+                if (column_left == 0)temp = sum_use[column];
+                else temp = sum_use[column] - sum_use[column_left];
+
+                if (temp <= mid)
+                    column++;
+                else {
+                    count_b++;
+                    column_left = column;
+                    column++;
+                }
+            }
+            if (count_b >= b) {
+                count_a++;
+                row_low++;
+                row_high = row_low;
+            } else {
+                row_low++;
+            }
+            if (row_low == n)break;
+        }
+        if (count_a >= a)check_answer = true;
+        else check_answer = false;

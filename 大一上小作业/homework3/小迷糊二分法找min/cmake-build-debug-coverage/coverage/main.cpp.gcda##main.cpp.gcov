@@ -1,0 +1,109 @@
+        -:    0:Source:/mnt/c/Users/lu'ren'jia'd's/CLionProjects/untitled3/main.cpp
+        -:    0:Graph:/mnt/c/Users/lu'ren'jia'd's/CLionProjects/untitled3/cmake-build-debug-coverage/CMakeFiles/untitled3.dir/main.cpp.gcno
+        -:    0:Data:-
+        -:    0:Runs:0
+        -:    1:#include <iostream>
+        -:    2:
+        -:    3:using namespace std;
+        -:    4:int length;
+        -:    5:const int NEGMAXi=-1e4+1;
+function main called 0 returned 0% blocks executed 0%
+    #####:    6:int main() {
+        -:    7:    int maxsum(int a[], int right, int left = 0);
+    #####:    8:    cin >> length;
+    #####:    9:    int array[length];
+    #####:   10:    for (int k = 0; k < length; ++k) {
+    %%%%%:   10-block  0
+    %%%%%:   10-block  1
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   10-block  2
+    #####:   11:        cin >> array[k];
+    %%%%%:   11-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   12:    }
+    #####:   13:   int a= maxsum(array, length - 1, 0) ;
+    %%%%%:   13-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   14:    cout<<a<<endl;
+    %%%%%:   14-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   14-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:   15:    return 0;
+    %%%%%:   15-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   15-block  1
+        -:   16:}
+        -:   17:
+function _Z4max3iii called 0 returned 0% blocks executed 0%
+    #####:   18:int max3(int a, int b, int c) {
+    #####:   19:    int temp = (a > b ? a : b);
+    %%%%%:   19-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   19-block  1
+    %%%%%:   19-block  2
+    #####:   20:    return (temp > c ? temp : c);
+    %%%%%:   20-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   20-block  1
+    %%%%%:   20-block  2
+    %%%%%:   20-block  3
+        -:   21:}
+        -:   22:
+function _Z6maxsumPiii called 0 returned 0% blocks executed 0%
+    #####:   23:int maxsum(int a[], int right, int left) {//right=length-1;
+    #####:   24:    if (left == right) return (a[left] > 0 ? a[left] : 0);
+    %%%%%:   24-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   24-block  1
+    #####:   25:    int center = (left + right) / 2;
+    #####:   26:    int left_max = maxsum(a, center, left);
+    %%%%%:   26-block  0
+call    0 never executed
+    #####:   27:    int right_max = maxsum(a, right, center);
+call    0 never executed
+    #####:   28:    int semi_left_max = NEGMAXi, semi_right_max = NEGMAXi;
+    #####:   29:    int left_sum = 0, right_sum = 0;
+    #####:   30:    for (int i = left; i <= center; ++i) {
+    %%%%%:   30-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   30-block  1
+    #####:   31:        left_sum += a[i];
+    #####:   32:        if (left_sum > semi_left_max)semi_left_max = left_sum;
+    %%%%%:   32-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   32-block  1
+        -:   33:    }
+    #####:   34:    for (int j = center + 1; j <= right; ++j) {
+    %%%%%:   34-block  0
+    %%%%%:   34-block  1
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   34-block  2
+    #####:   35:        right_sum += a[j];
+    #####:   36:        if (right_sum > semi_right_max)semi_right_max = right_sum;
+    %%%%%:   36-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   36-block  1
+        -:   37:    }
+    #####:   38:    return max3(left_max, right_max, semi_left_max + semi_right_max);
+    %%%%%:   38-block  0
+call    0 never executed
+        -:   39:}

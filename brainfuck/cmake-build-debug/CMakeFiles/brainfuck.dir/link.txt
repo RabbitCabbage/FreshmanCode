@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/brainfuck.dir/interpreter.c.o  -o brainfuck 

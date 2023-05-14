@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/lu'ren'jia'd's/CLionProjects/Mother'sDay/contol.h
+string
+-
+iostream
+-
+tool.h
+/mnt/c/Users/lu'ren'jia'd's/CLionProjects/Mother'sDay/tool.h
+risc-v32.h
+/mnt/c/Users/lu'ren'jia'd's/CLionProjects/Mother'sDay/risc-v32.h
+
+/mnt/c/Users/lu'ren'jia'd's/CLionProjects/Mother'sDay/main.cpp
+iostream
+-
+string
+-
+contol.h
+/mnt/c/Users/lu'ren'jia'd's/CLionProjects/Mother'sDay/contol.h
+tool.h
+/mnt/c/Users/lu'ren'jia'd's/CLionProjects/Mother'sDay/tool.h
+
+/mnt/c/Users/lu'ren'jia'd's/CLionProjects/Mother'sDay/risc-v32.h
+string
+-
+iostream
+-
+tool.h
+/mnt/c/Users/lu'ren'jia'd's/CLionProjects/Mother'sDay/tool.h
+
+/mnt/c/Users/lu'ren'jia'd's/CLionProjects/Mother'sDay/tool.h
+string
+-
+iostream
+-
+

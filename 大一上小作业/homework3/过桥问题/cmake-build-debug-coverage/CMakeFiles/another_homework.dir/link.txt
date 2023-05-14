@@ -1,0 +1,1 @@
+/usr/bin/c++  --coverage -g   CMakeFiles/another_homework.dir/another_homework.cpp.o  -o another_homework 

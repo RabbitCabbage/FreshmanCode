@@ -1,0 +1,71 @@
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:1:1: warning: #includes are not sorted properly [llvm-include-order]
+#include <iostream>
+^        ~~~~~~~~~~
+         "oj.h"
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:4:1: warning: do not use namespace using-directives; use using-declarations instead [google-build-using-namespace]
+using namespace std;
+^
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:6:5: warning: use a trailing return type for this function [modernize-use-trailing-return-type]
+int main() {
+~~~ ^
+auto       -> int
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:9:20: warning: 5 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    icpc.Submit(4, 5, "234234");
+                   ^
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:9:20: warning: 5 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:17:17: warning: 6 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    OIJudger oi(6, 6, "345345  \n567567  \n");
+                ^
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:17:17: warning: 6 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:17:20: warning: 6 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    OIJudger oi(6, 6, "345345  \n567567  \n");
+                   ^
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:17:20: warning: 6 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:18:15: warning: 5 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    oi.Submit(5, 5, "345345\n567567\n");
+              ^
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:18:15: warning: 5 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:18:18: warning: 5 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    oi.Submit(5, 5, "345345\n567567\n");
+                 ^
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:18:18: warning: 5 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:20:15: warning: 5 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    oi.Submit(5, 5, "345345\n567567\n");
+              ^
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:20:15: warning: 5 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:20:18: warning: 5 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    oi.Submit(5, 5, "345345\n567567\n");
+                 ^
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:20:18: warning: 5 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:23:22: warning: 8.0 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    SpacialJudger sp(8.0, 8.0, 2.0, 2.0, "1111111");
+                     ^
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:23:22: warning: 8.0 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:23:27: warning: 8.0 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    SpacialJudger sp(8.0, 8.0, 2.0, 2.0, "1111111");
+                          ^
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:23:27: warning: 8.0 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:23:32: warning: 2.0 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    SpacialJudger sp(8.0, 8.0, 2.0, 2.0, "1111111");
+                               ^
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:23:32: warning: 2.0 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:23:37: warning: 2.0 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    SpacialJudger sp(8.0, 8.0, 2.0, 2.0, "1111111");
+                                    ^
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:23:37: warning: 2.0 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:24:15: warning: 8 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    sp.Submit(8,8, "1111111");
+              ^
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:24:15: warning: 8 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:24:17: warning: 8 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    sp.Submit(8,8, "1111111");
+                ^
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:24:17: warning: 8 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:26:15: warning: 5 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    sp.Submit(5, 5, "1111111");
+              ^
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:26:15: warning: 5 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:26:18: warning: 5 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    sp.Submit(5, 5, "1111111");
+                 ^
+/mnt/c/users/lu'ren'jia'd's/clionprojects/homework6/main.cpp:26:18: warning: 5 is a magic number; consider replacing it with a named constant [readability-magic-numbers]
